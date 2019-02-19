@@ -1,0 +1,4 @@
+#!/bin/bash
+title=$(youtube-dl -o "/home/panos/Videos/YouTube/%(title)s.%(ext)s" -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --print-json --merge-output-format mp4 "$1" | jq -r .title)
+sleep 2
+mpv "/home/panos/Videos/YouTube/$title.mp4"

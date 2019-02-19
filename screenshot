@@ -1,0 +1,1 @@
+import -window root ~/Pictures/Screenshots/$(cd ~/Pictures/Screenshots; getNextName screenshot png)

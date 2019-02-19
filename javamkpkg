@@ -1,0 +1,7 @@
+#!/bin/bash
+for i in *.java; do
+    [ -f "$i" ] || break
+    { echo -n -e "package $1;\n"; cat "$i"; } > "$i".tmp
+    mv "$i".tmp "$i"
+done
+javac *.java

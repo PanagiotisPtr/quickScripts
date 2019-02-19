@@ -1,0 +1,2 @@
+#!/bin/bash
+toilet -f smblock "$1" | lolcat

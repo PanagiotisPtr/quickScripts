@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh -N -f -g -R 0.0.0.0:55555:localhost:22 root@68.183.39.234

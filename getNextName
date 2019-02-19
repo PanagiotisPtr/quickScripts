@@ -1,0 +1,13 @@
+name="$1"
+ext="$2"
+number=0
+suffix="$(printf -- '_%03d' "$number")"
+
+while test -e "$name$suffix.$ext"; do
+	((++number))
+	suffix="$(printf -- '_%03d' "$number")"
+done
+
+fname="$name$suffix.$ext"
+
+echo $fname
