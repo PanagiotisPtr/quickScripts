@@ -1,0 +1,2 @@
+#!/bin/bash
+mantablockscreen -cc & python LinuxHello.py ~/Pictures/LinuxHello
